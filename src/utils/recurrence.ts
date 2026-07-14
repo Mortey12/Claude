@@ -29,11 +29,22 @@ export function erElementForfallDenneDagen(element: RutineElement, dateStr: stri
   }
 }
 
+/**
+ * Månad i planen, klemt til 1–12: etter det første året vert brukaren verande i
+ * det siste fase-vindauget (Heilskap) i staden for å hoppe attende til Grunnmur.
+ * Utan denne klemminga ville fase-gate under bli sykliske og låse tidlegare
+ * frigjevne rutineelement på nytt kvart år.
+ */
+function effektivPlanMaaned(planAnker: string, dateStr: string): number {
+  const offset = monthOffsetSince(planAnker, dateStr);
+  return Math.min(offset, 12);
+}
+
 export function erFaseAktiv(fase: Fase, planAnker: string, dateStr: string): boolean {
   const offset = monthOffsetSince(planAnker, dateStr);
   if (offset < 1) return false;
-  const syklusMaaned = ((offset - 1) % 12) + 1;
-  return syklusMaaned >= fase.maanadFra && syklusMaaned <= fase.maanadTil;
+  const maaned = effektivPlanMaaned(planAnker, dateStr);
+  return maaned >= fase.maanadFra && maaned <= fase.maanadTil;
 }
 
 export function finnAktivFase(fasar: Fase[], planAnker: string, dateStr: string): Fase | null {
@@ -43,10 +54,10 @@ export function finnAktivFase(fasar: Fase[], planAnker: string, dateStr: string)
 export function erElementFaseFreigjeven(element: RutineElement, fasar: Fase[], planAnker: string, dateStr: string): boolean {
   if (!element.fase) return true;
   const offset = monthOffsetSince(planAnker, dateStr);
+  if (offset < 1) return false;
   const fase = fasar.find((f) => f.id === element.fase);
   if (!fase) return true;
-  const syklusMaaned = ((offset - 1) % 12) + 1;
-  return offset >= 1 && syklusMaaned >= fase.maanadFra;
+  return effektivPlanMaaned(planAnker, dateStr) >= fase.maanadFra;
 }
 
 export function elementForDagIDag(
