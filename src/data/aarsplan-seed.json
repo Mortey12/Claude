@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "sprak": "nn",
+    "versjon": 1,
+    "skildring": "Forhandsplanlagt aar med progressiv rutine. Alt er redigerbart: brukaren kan hoppe over, flytte, endre namn paa eller slette kva som helst, og leggje til eigne ting via hurtiglegg-boksen.",
+    "foerste_oppstart": {
+      "spoer_om": "startdato",
+      "merknad": "Heile aaret vert forankra til startdatoen slik at fasar og gjentakingar fell paa verkelege datoar."
+    }
+  },
+
+  "kategoriar": [
+    { "id": "hudpleie",     "namn": "Hudpleie",            "farge": "#F4C6D0", "ikon": "droplet" },
+    { "id": "haar",         "namn": "Haar og haarfjerning", "farge": "#E8B3C8", "ikon": "sparkles" },
+    { "id": "stemme",       "namn": "Stemmetrening",        "farge": "#C9B6E4", "ikon": "mic" },
+    { "id": "kropp",        "namn": "Haldning og roersle",  "farge": "#B5D2E8", "ikon": "activity" },
+    { "id": "antrekk",      "namn": "Antrekk og garderobe", "farge": "#F2D0A8", "ikon": "shirt" },
+    { "id": "maaltid",      "namn": "Maaltid",              "farge": "#B8E0C2", "ikon": "utensils" },
+    { "id": "vask",         "namn": "Vask og reinhald",     "farge": "#A8D8D8", "ikon": "washing-machine" },
+    { "id": "humoer",       "namn": "Humoer og dagbok",     "farge": "#D8C6B0", "ikon": "book-heart" },
+    { "id": "sparing",      "namn": "Sparing",              "farge": "#C2D8A8", "ikon": "piggy-bank" },
+    { "id": "rom",          "namn": "Rom og trivsel",       "farge": "#F0C8B0", "ikon": "home" },
+    { "id": "tft",          "namn": "TFT og gaming",        "farge": "#B0C4F0", "ikon": "gamepad-2" },
+    { "id": "jobb",         "namn": "Jobb og karriere",     "farge": "#C8C0B0", "ikon": "briefcase" },
+    { "id": "aerend",       "namn": "AErend",               "farge": "#D0D0D8", "ikon": "list" },
+    { "id": "anna",         "namn": "Anna",                 "farge": "#C8C8C8", "ikon": "circle" }
+  ],
+
+  "fasar": [
+    { "id": "grunnmur",  "namn": "Grunnmur",  "maanad_fra": 1,  "maanad_til": 2,  "skildring": "Milde, enkle vanar. Faa ting, men jamt." },
+    { "id": "bygging",   "namn": "Bygging",   "maanad_fra": 3,  "maanad_til": 4,  "skildring": "Legg til meir. Byrjar aa byggje opp garderobe og meir struktur." },
+    { "id": "rytme",     "namn": "Fast rytme","maanad_fra": 5,  "maanad_til": 6,  "skildring": "Rutinane er vanar no. Djupare arbeid med stemme og stil." },
+    { "id": "finpuss",   "namn": "Finpuss",   "maanad_fra": 7,  "maanad_til": 9,  "skildring": "Haarfjerning gaar over til vedlikehald. Detaljane kjem paa plass." },
+    { "id": "heilskap",  "namn": "Heilskap",  "maanad_fra": 10, "maanad_til": 12, "skildring": "Alt gaar av seg sjoelv. Gjennomgang, justering og refleksjon." }
+  ],
+
+  "rutineelement": [
+
+    { "tittel": "Morgonhudpleie: reinsing og fuktkrem", "kategori": "hudpleie", "delAvDag": "morgon", "gjentaking": { "type": "daily" }, "fase": "grunnmur", "notat": "Mild reinsing, deretter fuktkrem. Hald det enkelt." },
+    { "tittel": "Solkrem SPF 30+", "kategori": "hudpleie", "delAvDag": "morgon", "gjentaking": { "type": "daily" }, "fase": "grunnmur", "notat": "Kvar dag, ogsaa naar det er overskya." },
+    { "tittel": "Kveldshudpleie: reinsing og fuktkrem", "kategori": "hudpleie", "delAvDag": "kveld", "gjentaking": { "type": "daily" }, "fase": "grunnmur" },
+    { "tittel": "Kjemisk peeling (BHA/AHA)", "kategori": "hudpleie", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["tir", "fre"] }, "fase": "bygging", "notat": "2 til 3 gonger i veka. Byrjar forsiktig." },
+    { "tittel": "Ansiktsmaske", "kategori": "hudpleie", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["sun"] }, "fase": "rytme" },
+
+    { "tittel": "Barbere bein", "kategori": "haar", "delAvDag": "kveld", "gjentaking": { "type": "interval", "kvarNDag": 3 }, "fase": "grunnmur", "notat": "Eksfolier foerst, fukt etterpaa mot inngrodde haar." },
+    { "tittel": "Barbere armar og kropp", "kategori": "haar", "delAvDag": "kveld", "gjentaking": { "type": "interval", "kvarNDag": 4 }, "fase": "grunnmur" },
+    { "tittel": "IPL-behandling", "kategori": "haar", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["sun"] }, "fase": "bygging", "notat": "Loggf oer omraade og dato. Effekt kjem gradvis over 8 til 12 veker." },
+    { "tittel": "Haarfjerning: berre vedlikehald", "kategori": "haar", "delAvDag": "kveld", "gjentaking": { "type": "interval", "kvarNDag": 10 }, "fase": "finpuss", "notat": "Etter kvart som IPL verkar, treng du mykje sjeldnare." },
+    { "tittel": "Stelle augnebryn", "kategori": "haar", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["sun"] }, "fase": "bygging" },
+
+    { "tittel": "Stemmeutforsking: mjuk oppvarming", "kategori": "stemme", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["man", "ons", "fre"] }, "fase": "grunnmur", "notat": "Ingen press. Berre bli kjend med stemma." },
+    { "tittel": "Stemmetrening: tonehoegd og resonans", "kategori": "stemme", "delAvDag": "kveld", "gjentaking": { "type": "weekdays" }, "fase": "bygging", "notat": "Kort oekt kvar kvardag." },
+    { "tittel": "Stemmetrening: lese hoegt", "kategori": "stemme", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["tir", "tor"] }, "fase": "rytme", "notat": "Les ei side hoegt og lytt paa opptak." },
+
+    { "tittel": "Haldningsoevingar", "kategori": "kropp", "delAvDag": "morgon", "gjentaking": { "type": "daily" }, "fase": "grunnmur", "notat": "Kostar ingenting og gjer stor skilnad." },
+    { "tittel": "Roersle eller tur", "kategori": "kropp", "delAvDag": "ettermiddag", "gjentaking": { "type": "weekly", "dagar": ["man", "ons", "fre", "sun"] }, "fase": "bygging" },
+    { "tittel": "Toeying og mjuke roersler", "kategori": "kropp", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["tir", "tor"] }, "fase": "rytme" },
+
+    { "tittel": "Legg fram antrekk til i morgon", "kategori": "antrekk", "delAvDag": "natt", "tid": "22:00", "gjentaking": { "type": "daily" }, "fase": "grunnmur" },
+    { "tittel": "Se gjennom garderobe, finn hol og oenske", "kategori": "antrekk", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["sun"] }, "fase": "bygging", "notat": "Bruktkjoep: Fretex, Finn, Vinted." },
+    { "tittel": "Prove nye kombinasjonar", "kategori": "antrekk", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["lau"] }, "fase": "rytme" },
+    { "tittel": "Neglepleie: file og neglebandsolje", "kategori": "antrekk", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["sun"] }, "fase": "finpuss", "notat": "Diskret, men gir feminint inntrykk." },
+
+    { "tittel": "Planlegg maaltid for veka", "kategori": "maaltid", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["sun"] }, "fase": "grunnmur", "notat": "Fokus paa variasjon og naering, ikkje avgrensing." },
+    { "tittel": "Lag handleliste fraa maaltidsplan", "kategori": "maaltid", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["sun"] }, "fase": "grunnmur" },
+    { "tittel": "Drikk nok vatn gjennom dagen", "kategori": "maaltid", "delAvDag": "morgon", "gjentaking": { "type": "daily" }, "fase": "grunnmur" },
+
+    { "tittel": "Handvask av feminine plagg", "kategori": "vask", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["tir"] }, "fase": "grunnmur", "notat": "I vasken eller dusjen med litt saape. Heng til toerk paa hengar inne." },
+    { "tittel": "Heng til toerk og rydd bort naar toert", "kategori": "vask", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["ons"] }, "fase": "grunnmur", "notat": "Oppbevar reine plagg diskret: vakuumpose, koffert eller laasbar bag." },
+    { "tittel": "Maskinvask (diskret load med mesh-pose)", "kategori": "vask", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["fre"] }, "fase": "grunnmur", "notat": "Meshpose inni ein moerk load skjuler plagga godt." },
+    { "tittel": "Sjekk lager: saape, toerkeplass, oppbevaring", "kategori": "vask", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["sun"] }, "fase": "bygging" },
+    { "tittel": "Rydd og reinhald eige rom", "kategori": "vask", "delAvDag": "ettermiddag", "gjentaking": { "type": "weekly", "dagar": ["lau"] }, "fase": "grunnmur" },
+    { "tittel": "Vask handklede og sengetoey", "kategori": "vask", "delAvDag": "ettermiddag", "gjentaking": { "type": "interval", "kvarNDag": 14 }, "fase": "grunnmur" },
+
+    { "tittel": "Kort dagbok: tre linjer om dagen", "kategori": "humoer", "delAvDag": "natt", "gjentaking": { "type": "daily" }, "fase": "grunnmur", "notat": "Med valfri humoer-tagg." },
+    { "tittel": "Vekesrefleksjon", "kategori": "humoer", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["sun"] }, "fase": "rytme", "notat": "Kva gjekk bra, kva vil eg justere." },
+    { "tittel": "Framgangsbilete (lokalt lagra)", "kategori": "humoer", "delAvDag": "kveld", "gjentaking": { "type": "interval", "kvarNDag": 30 }, "fase": "bygging", "notat": "Same vinkel og lys kvar gong for aa sjaa endring over tid." },
+
+    { "tittel": "Fast sparing paa payday (den 15.)", "kategori": "sparing", "delAvDag": "morgon", "gjentaking": { "type": "monthly", "dagIMaanad": 15 }, "fase": "grunnmur", "notat": "Automatisk overfoering same dag som loenn kjem, foer pengane vert brukte. Sjoelv eit lite fast beloep tel. BSU foerst om du ikkje har fylt den." },
+    { "tittel": "Sjekk sparemaal og framgang", "kategori": "sparing", "delAvDag": "kveld", "gjentaking": { "type": "monthly", "dagIMaanad": 1 }, "fase": "grunnmur" },
+    { "tittel": "Gjennomgang av budsjett", "kategori": "sparing", "delAvDag": "kveld", "gjentaking": { "type": "monthly", "dagIMaanad": 15 }, "fase": "rytme" },
+
+    { "tittel": "Duft: mild body lotion eller lett parfyme", "kategori": "antrekk", "delAvDag": "morgon", "gjentaking": { "type": "daily" }, "fase": "finpuss" },
+    { "tittel": "Stell av haar paa hovudet", "kategori": "haar", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["man", "tor"] }, "fase": "bygging", "notat": "Godt balsam. Byrjar aa la det vekse no om du vil ha lengd." },
+
+    { "tittel": "Stor gjennomgang: kva verkar, kva justerer eg", "kategori": "humoer", "delAvDag": "kveld", "gjentaking": { "type": "monthly", "dagIMaanad": 1 }, "fase": "heilskap" },
+    { "tittel": "Refleksjon: kor langt har eg kome i aar", "kategori": "humoer", "delAvDag": "kveld", "gjentaking": { "type": "interval", "kvarNDag": 90 }, "fase": "heilskap" },
+
+    { "tittel": "Rydd og gjer rommet triveleg", "kategori": "rom", "delAvDag": "ettermiddag", "gjentaking": { "type": "weekly", "dagar": ["lau"] }, "fase": "grunnmur", "notat": "Eit rydda rom er grunnlaget. Byrjar smaatt: fast plass til alt." },
+    { "tittel": "Mjukt lys: liten lampe eller lyslenke", "kategori": "rom", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["sun"] }, "fase": "grunnmur", "notat": "Varmt lys endrar heile stemninga i rommet, og er billig. Sjekk bruktmarknaden." },
+    { "tittel": "Legg til ei groen plante", "kategori": "rom", "delAvDag": "ettermiddag", "gjentaking": { "type": "interval", "kvarNDag": 60 }, "fase": "bygging", "notat": "Ei robust plante om gongen. Pothos eller sukkulent er lettstelte og rimelege." },
+    { "tittel": "Tekstilar: pute, pledd eller mjukt teppe", "kategori": "rom", "delAvDag": "ettermiddag", "gjentaking": { "type": "interval", "kvarNDag": 45 }, "fase": "bygging", "notat": "Tekstilar gjer rommet lunt og feminint utan store kostnader. Fretex og Finn har mykje." },
+    { "tittel": "Pynt paa vegg: bilete, kort eller lita ramme", "kategori": "rom", "delAvDag": "ettermiddag", "gjentaking": { "type": "interval", "kvarNDag": 45 }, "fase": "rytme", "notat": "Ting som betyr noko for deg. Postkort og utskrifter kostar lite." },
+    { "tittel": "Duft i rommet: doftlys eller romspray", "kategori": "rom", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["fre"] }, "fase": "rytme" },
+    { "tittel": "Sesongpynt: bytt smaa detaljar", "kategori": "rom", "delAvDag": "ettermiddag", "gjentaking": { "type": "interval", "kvarNDag": 90 }, "fase": "finpuss", "notat": "Smaa skifte etter aarstid held rommet friskt utan aa kjoepe mykje nytt." },
+    { "tittel": "Lag ein triveleg krok: stol, pute, lys", "kategori": "rom", "delAvDag": "ettermiddag", "gjentaking": { "type": "interval", "kvarNDag": 120 }, "fase": "finpuss", "notat": "Ein eigen liten stad i rommet som er berre din." },
+    { "tittel": "Gjennomgang av rommet: kva gler meg, kva kan gaa", "kategori": "rom", "delAvDag": "ettermiddag", "gjentaking": { "type": "interval", "kvarNDag": 90 }, "fase": "heilskap" },
+
+    { "tittel": "Sjekk sparetips-lista for eit nytt triks", "kategori": "sparing", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["sun"] }, "fase": "grunnmur", "notat": "Eitt lite grep om gongen, sjaa sparetips nedanfor." },
+    { "tittel": "24-timarsregel foer eit ikkje-noedvendig kjoep", "kategori": "sparing", "delAvDag": "morgon", "gjentaking": { "type": "daily" }, "fase": "bygging", "notat": "Vil du framleis ha det i morgon? Ofte ikkje." },
+    { "tittel": "Sjekk abonnement, sei opp det du ikkje brukar", "kategori": "sparing", "delAvDag": "kveld", "gjentaking": { "type": "monthly", "dagIMaanad": 2 }, "fase": "bygging", "notat": "Straumesteneste, apper, ting du gløymde. Smaa summar blir mykje i aaret." },
+    { "tittel": "Legg smaapengar og avrunding paa sparekonto", "kategori": "sparing", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["sun"] }, "fase": "rytme", "notat": "Rund opp kjoep og flytt differansen. Merkast ikkje, men veks." },
+
+    { "tittel": "TFT ranked-oekt (full fem paa rommet)", "kategori": "tft", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["man", "tir", "tor"] }, "fase": "grunnmur", "notat": "Fast speletid, 2-3 games med fullt fokus. Kle deg som du vil, dette er di tid." },
+    { "tittel": "Lang ladder-oekt mot Challenger", "kategori": "tft", "delAvDag": "ettermiddag", "gjentaking": { "type": "weekly", "dagar": ["lau"] }, "fase": "grunnmur", "notat": "Lengre oekt naar du har fri. Kvalitet over kvantitet: stopp om du tiltar." },
+    { "tittel": "VOD-gjennomgang av eigne games", "kategori": "tft", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["ons"] }, "fase": "grunnmur", "notat": "Sjaa gjennom 1-2 tapte games. Kva kunne vore spelt annleis? Dette skil GM fraa Chally." },
+    { "tittel": "Meta-sjekk: patch notes og comps", "kategori": "tft", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["ons"] }, "fase": "grunnmur", "notat": "Hald deg oppdatert paa patchen, saerleg foer turneringar." },
+    { "tittel": "Sjekk paameldingsfristar EMEA-turneringar", "kategori": "tft", "delAvDag": "kveld", "gjentaking": { "type": "monthly", "dagIMaanad": 1 }, "fase": "bygging", "notat": "Opne kvalifiseringar og regionale cupar. Ikkje miss ein frist." },
+    { "tittel": "Turneringsfoerebuing: oevingslobby", "kategori": "tft", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["fre"] }, "fase": "rytme", "notat": "Naermare turnering: spel som om det gjeld. Lobby-taktikk er annleis enn ladder." },
+    { "tittel": "Pause-sjekk: hender, nakke, auge", "kategori": "tft", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["man", "tir", "tor", "lau"] }, "fase": "bygging", "notat": "Kort toeying mellom games. Du skal halde paa lenge, ta vare paa deg sjoelv." },
+
+    { "tittel": "Jobbsoek og soeknader", "kategori": "jobb", "delAvDag": "ettermiddag", "gjentaking": { "type": "weekly", "dagar": ["tir", "tor"] }, "fase": "grunnmur", "notat": "Faste bolkar saa det ikkje et opp heile veka. Kvalitet i faa soeknader slaar mange raske." },
+    { "tittel": "Vekesplan: jobb, TFT og rutinar", "kategori": "jobb", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["sun"] }, "fase": "grunnmur", "notat": "Sjaa veka under eitt saa TFT-satsinga og resten ikkje kolliderer." }
+  ],
+
+  "maaltidsdoeme_veke": {
+    "merknad": "Ei doeme-veke som fyller planleggjaren ved foerste oppstart. Fokus paa variasjon og naering, ingen kalorital i standard.",
+    "dagar": [
+      { "dag": "man", "frukost": "Havregraut med baer og noetter", "lunsj": "Brood med egg og avokado", "middag": "Laks med potet og groensaker", "snack": "Yoghurt" },
+      { "dag": "tir", "frukost": "Smoothie med banan og spinat", "lunsj": "Restar fraa i gaar", "middag": "Kylling wok med ris", "snack": "Frukt og noetter" },
+      { "dag": "ons", "frukost": "Egg og fullkornsbrood", "lunsj": "Salat med kikertar", "middag": "Pasta med tomat og groensaker", "snack": "Cottage cheese" },
+      { "dag": "tor", "frukost": "Havregraut med eple og kanel", "lunsj": "Wrap med kylling", "middag": "Fiskegryte med brood", "snack": "Nubar" },
+      { "dag": "fre", "frukost": "Yoghurt med granola", "lunsj": "Suppe og brood", "middag": "Heimelaga pizza med mykje groent", "snack": "Frukt" },
+      { "dag": "lau", "frukost": "Panne kaker med baer", "lunsj": "Restar eller enkel salat", "middag": "Taco med groensaker og boenner", "snack": "Popcorn" },
+      { "dag": "sun", "frukost": "Rolig frukost, egg og groenter", "lunsj": "Brunsj-tallerk", "middag": "Ovnsbakt kylling med rotgroensaker", "snack": "Sjokolade og te" }
+    ]
+  },
+
+  "sparemaal_doeme": [
+    { "namn": "Eigen bustad", "maalbeloep": 300000, "notat": "BSU og fast sparing kvar maanad." },
+    { "namn": "Garderobe", "maalbeloep": 15000, "notat": "Bruktkjoep foerst, kvalitet over kvantitet." },
+    { "namn": "Viktige ting", "maalbeloep": 20000, "notat": "IPL-apparat, behandlingar, det som trengst." }
+  ],
+
+  "push_modus": {
+    "namn": "Chally-push",
+    "skildring": "Ein intensiv maanad (eller lengre) der TFT vert prioritert og resten av rutinane gaar ned til minimum. Kan slaast paa og av i innstillingar. Naar aktiv: TFT-elementa nedanfor erstattar dei vanlege TFT-elementa, og appen viser ein game-teljar mot vekesmaalet.",
+    "maal": {
+      "games_per_veke_standard": 45,
+      "merknad": "Ca. 180-200 games i maanaden. Juster opp mot 70 per veke (ca. 300/mnd) om det er ein friperiode. Appen skal la brukaren setje sitt eige tal."
+    },
+    "tft_element": [
+      { "tittel": "Kveldsoekt: ranked (full fem)", "kategori": "tft", "delAvDag": "kveld", "gjentaking": { "type": "weekdays" }, "notat": "4-5 games med fullt fokus. Logg games i teljaren. Stopp ved to daarlege games paa rad: heller ein kort kveld enn tilt-LP." },
+      { "tittel": "Lang oekt: ranked", "kategori": "tft", "delAvDag": "ettermiddag", "gjentaking": { "type": "weekly", "dagar": ["lau", "sun"] }, "notat": "8-10 games med pausar. Et skikkeleg foer oekta, ikkje undervegs-autopilot." },
+      { "tittel": "VOD: gaa gjennom 2 tapte games", "kategori": "tft", "delAvDag": "kveld", "gjentaking": { "type": "weekly", "dagar": ["ons"] }, "notat": "Ogsaa i push-modus. Volum utan analyse sementerer feil." },
+      { "tittel": "Game-teljar: sjekk vekesmaal", "kategori": "tft", "delAvDag": "natt", "gjentaking": { "type": "weekly", "dagar": ["sun"] }, "notat": "Ligg du etter, juster neste veke i staden for aa skvise inn games naar du er sliten." }
+    ],
+    "minimum_rutine": [
+      { "tittel": "Hudpleie morgon og kveld", "kategori": "hudpleie", "gjentaking": { "type": "daily" }, "notat": "Dette held fram uansett. To minutt." },
+      { "tittel": "Skikkelege maaltid", "kategori": "maaltid", "gjentaking": { "type": "daily" }, "notat": "Enkle men ordentlege. Prestasjonen paa ladder heng paa dette." },
+      { "tittel": "Fast leggetid", "kategori": "humoer", "delAvDag": "natt", "gjentaking": { "type": "daily" }, "notat": "Soevn er den stoerste skjulte LP-gevinsten. Ikkje eitt game til etter leggetid." },
+      { "tittel": "Kort toeying: hender, nakke, auge", "kategori": "kropp", "gjentaking": { "type": "daily" }, "notat": "Mellom games. Du skal vare heile maanaden." },
+      { "tittel": "Handvask av plagg", "kategori": "vask", "gjentaking": { "type": "weekly", "dagar": ["tir"] }, "notat": "Held fram som vanleg, du brukar dei jo kvar kveld no." }
+    ],
+    "pausert_i_push": ["Stemmetrening flytta til valfri", "Rom-prosjekt paa vent", "Jobbsoek redusert til aa svare paa aktive prosessar", "Vekesrefleksjon erstatta av game-teljar-sjekken"]
+  },
+
+  "sparetips": {
+    "merknad": "Tilpassa aa spare jamt sjoelv med liten loenn. Vist i appen, eitt tips om gongen.",
+    "tips": [
+      { "tittel": "Betal deg sjoelv foerst", "tekst": "Sett opp automatisk overfoering til sparekonto same dag loenna kjem (den 15.), foer pengane vert brukte. Sjoelv 200 til 500 kr i maanaden byggjer seg opp." },
+      { "tittel": "Bruk BSU om du er under 34", "tekst": "BSU er den beste avtalen i Noreg for foerste bustad: hoeg rente og skattefradrag. Fyll den foer anna sparing om du kan." },
+      { "tittel": "Eigen konto for sparing", "tekst": "Hald sparepengane paa ein eigen hoegrentekonto du ikkje har kopla til kvardagskortet. Det du ikkje ser, brukar du ikkje." },
+      { "tittel": "Bruktkjoep foerst", "tekst": "Fretex, Finn og Vinted har mykje fint feminint billeg. Bra for lommeboka, og meir diskret enn nye kjoep." },
+      { "tittel": "24-timarsregelen", "tekst": "For alt som ikkje er noedvendig: vent eit doegn. Om du framleis oenskjer det i morgon, kjoep det. Ofte forsvinn lysta." },
+      { "tittel": "Planlegg maaltid og spar mat", "tekst": "Ei enkel vekesmeny og handleliste kuttar impulskjoep og matsvinn. Ein av dei stoerste sparepostane for smaa budsjett." },
+      { "tittel": "Sjekk abonnementa dine", "tekst": "Sei opp straumetenester og apper du ikkje brukar. Smaa maanadsbeloep blir fort tusenlappar i aaret." },
+      { "tittel": "Rund opp og spar differansen", "tekst": "Rund kjoep opp til naermaste tiar eller hundre og flytt differansen til sparing. Merkast knapt, men veks jamt." },
+      { "tittel": "Sett smaa, konkrete delmaal", "tekst": "Eit stort maal kjennest uoppnaaeleg. Del det opp: foerste 5000, deretter neste. Kvart delmaal er ei lita seiersfeiring." },
+      { "tittel": "Kjoep kvalitet der det tel", "tekst": "Billeg som ryk fort blir dyrt. For plagg og ting du brukar ofte, loenner det seg aa vente og kjoepe godt, gjerne brukt." },
+      { "tittel": "Ha ein liten buffer foerst", "tekst": "Spar deg opp ein liten reserve (t.d. 5000 til 10000) foer du sparar til stoerre maal, saa uventa utgifter ikkje veltar planen." },
+      { "tittel": "Feir framgangen, ikkje straff deg", "tekst": "Sparing er ein vane, ikkje ein test. Gikk ein maanad daarleg, byrjar du berre igjen neste. Du fortener aa spare til deg sjoelv." }
+    ]
+  }
+}
