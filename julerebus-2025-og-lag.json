@@ -1,0 +1,86 @@
+{
+ "om": "Julerebus 2025 og laga frå Påske 2026. Legg til under Oppsett > Legg til frå fil.",
+ "kategoriar": [
+  {
+   "namn": "Julerebus",
+   "maks": 6,
+   "utanNummer": true
+  }
+ ],
+ "sporsmal": [
+  {
+   "kategori": "Julerebus",
+   "tekst": "Etter pakkar, pinnekjøtt og familie treng du luft. Du går ut i natta. Snøfnugg legg seg stille. Ei kvinne i raudt står ved vegkanten. Ho seier du skal møte ein mann fødd utanfor ekteskap, om vi skal tru etternamnet. Du skal møte han der han var kommandant, til han vart sviken og drepen av dei han var vald til å leie. Du veit med det same kvar du skal møte han. Ho nikkar og ber deg gå i lyset.",
+   "svar": "",
+   "berrePaaArket": true
+  },
+  {
+   "kategori": "Julerebus",
+   "tekst": "På vegen dit du skal tek du deg inn på eit hotell for natta. I inganen står ei dame, du høyrer kyrkje klokkene, og tenkte, eg hamner vel i helvete eller himmelen, ho tenner eit lys og du veit kor du er",
+   "svar": "Hotel California",
+   "berrePaaArket": true
+  },
+  {
+   "kategori": "Julerebus",
+   "tekst": "Ei jente du møtar på vegen fortel om at ho veks opp utan far, og fram til ho dro på leir hadde ho aldri møtt sin tvilling. Ho fortel at ho valde å bytte plass med vedkommande, men at dei i hu og hast måtte kome saman igjen når faren falt for feil kvinne. Kan du dra til garden der faren min budde spør ho?",
+   "svar": "Napa Valley",
+   "berrePaaArket": true
+  },
+  {
+   "kategori": "Julerebus",
+   "tekst": "Her møter du ei kvinne med 18+8 av høgste valør rundt halsen. Ho er den med flest i dei viktigaste lekene, sjølv om det er ein mann frå same land med lika mange av høgste valør. Ho ber deg dra til den byen der ho avslutta det heile med 2.",
+   "svar": "Pyeongchang",
+   "berrePaaArket": true
+  },
+  {
+   "kategori": "Julerebus",
+   "tekst": "Ved dette reisemålet vil du ikke oppholde deg for lenge, og heldigvis får du øye på ei oppslagstavle så snart du er framme. På den henger et ark fylt med tekst på ulike språk. Du fanger opp disse setningene:\nLe pays est composé de hauts plateaux et de basses terres périphériques.\nEl vigésimo séptimo país más extenso del mundo.\nA maior parte da população do país é cristã, porém, um terço de seus habitantes são muçulmanos.\nDas Land reicht von den inneren Tropen bis zu den nördlichen Randtropen.\nThe most populated landlocked country on Earth.\nዋና ከተማዋ አዲስ አበባ ናት።\nHvilket land er det snakk om?",
+   "svar": "Etiopia",
+   "berrePaaArket": true
+  },
+  {
+   "kategori": "Julerebus",
+   "tekst": "Jula er over og det er gått ein månad sidan du satt i pysjen og såg på klassikarane. Kjærleik og kaos på tven, men når du ser ein lapp minner det deg på avslutninga av ein. Kvar vil du fly?",
+   "svar": "Heathrow (London)",
+   "berrePaaArket": true
+  }
+ ],
+ "lag": [
+  {
+   "bord": 1,
+   "namn": "Hølen IL"
+  },
+  {
+   "bord": 2,
+   "namn": "Bromance Memorosa"
+  },
+  {
+   "bord": 3,
+   "namn": "De siste dagers hellige"
+  },
+  {
+   "bord": 4,
+   "namn": "Skinnbamsen"
+  },
+  {
+   "bord": 5,
+   "namn": "Oppstandelse"
+  },
+  {
+   "bord": 6,
+   "namn": "Team Hjortepølsa"
+  },
+  {
+   "bord": 7,
+   "namn": "Nederlaget"
+  },
+  {
+   "bord": 8,
+   "namn": "De Uvitende Optimistene"
+  },
+  {
+   "bord": 9,
+   "namn": "Lisa gikk til skolen"
+  }
+ ]
+}
